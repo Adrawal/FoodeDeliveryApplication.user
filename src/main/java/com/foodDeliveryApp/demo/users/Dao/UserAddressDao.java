@@ -1,7 +1,7 @@
 package com.foodDeliveryApp.demo.users.Dao;
 
-public class UserAddressView {
-	
+public class UserAddressDao {
+
 	private String addressLine1;
 	private String addressLine2;
 	private String city;
@@ -45,7 +45,4 @@ public class UserAddressView {
 		this.postalCode = postalCode;
 	}
 	
-	
-	
-
 }
