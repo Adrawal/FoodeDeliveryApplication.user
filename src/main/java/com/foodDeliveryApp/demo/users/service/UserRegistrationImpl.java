@@ -1,22 +1,34 @@
 package com.foodDeliveryApp.demo.users.service;
 
-import com.foodDeliveryApp.demo.users.Dao.BaseDao;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.foodDeliveryApp.demo.users.Dao.UserRegistrationRequestDao;
 import com.foodDeliveryApp.demo.users.Dao.UserRegistrationResponseDao;
 
-public class UserRegistrationImpl implements UserRegistrationService {
+public class UserRegistrationImpl implements UserRegistrationService
+{
 
-	@Override
-	public UserRegistrationResponseDao registration(UserRegistrationRequestDao request) {
+    public final static Logger logger = LoggerFactory.getLogger(UserRegistrationImpl.class);
 
-		
-		return null;
-	}
+    @Override
+    public UserRegistrationResponseDao registration(UserRegistrationRequestDao request)
+    {
+        logger.info("registration service is invoked.");
+        UserRegistrationResponseDao userRegistrationResponseDao = null;
+        try {
 
-	@Override
-	public BaseDao isUserExist(UserRegistrationRequestDao request) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+        } catch (Exception e) {
+
+        }
+
+        return userRegistrationResponseDao;
+    }
+
+    @Override
+    public boolean isUserExist(UserRegistrationRequestDao request)
+    {
+        return false;
+    }
 
 }
